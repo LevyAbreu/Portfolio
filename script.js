@@ -1,5 +1,3 @@
-
-// Menu toggle para mobile
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
@@ -7,14 +5,12 @@ toggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-// Fechar menu ao clicar em um link
 document.querySelectorAll('#nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('show');
   });
 });
 
-// Animação de entrada para elementos
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -50px 0px'
@@ -38,16 +34,14 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-// Observar elementos para animação
 document.querySelectorAll('.skill-card').forEach(el => observer.observe(el));
 document.querySelectorAll('.project-card').forEach(el => observer.observe(el));
 document.querySelectorAll('.exp-card').forEach(el => observer.observe(el));
 document.querySelectorAll('.btn-circle').forEach(el => observer.observe(el));
 
-// Adicionar efeito de digitação ao título principal
 const typedTextSpan = document.querySelector(".intro h1");
 if (typedTextSpan) {
-  const textArray = ["Sou o Levy Abreu", "Sou Web Dev", "Sou Mobile Dev"];
+  const textArray = ["Levy Abreu"];
   const typingDelay = 100;
   const erasingDelay = 50;
   const newTextDelay = 1500;
@@ -76,13 +70,11 @@ if (typedTextSpan) {
     }
   }
 
-  // Iniciar o efeito de digitação após a página carregar
   document.addEventListener("DOMContentLoaded", function() {
     if (textArray.length) setTimeout(type, newTextDelay + 250);
   });
 }
 
-// Animação suave para rolagem
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -100,7 +92,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Efeito de partículas no hero (opcional)
 function createParticles() {
   const hero = document.querySelector('.hero');
   if (!hero) return;
@@ -133,5 +124,4 @@ function createParticles() {
   }
 }
 
-// Iniciar partículas após carregamento
 window.addEventListener('load', createParticles);
