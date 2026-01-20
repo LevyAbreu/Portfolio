@@ -21,6 +21,7 @@
   scroll-behavior: smooth;
 }
 
+
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { 
@@ -29,6 +30,10 @@
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--primary); }
 
+html, body {
+  width: 100%;
+  position: relative;
+}
 body {
   background: var(--bg-dark);
   color: var(--text-main);
@@ -36,6 +41,11 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+} 
 
 header {
   display: flex;
@@ -79,8 +89,9 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 8% 40px;
+  padding: 60px 5% 40px; /* Reduzi de 8% para 5% para ganhar espaço lateral no mobile */
   min-height: 70vh;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
 }
 
 .intro h2 {
@@ -235,8 +246,9 @@ h2::after {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Minmax menor para telas pequenas */
+  gap: 20px;
+  width: 100%;
 }
 
 .project-card {
@@ -378,12 +390,6 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 1024px) {
-  .hero { flex-direction: column-reverse; text-align: center; padding-top: 80px; }
-  .hero-img img { width: 300px; height: 300px; }
-  .hero-buttons { justify-content: center; }
-  .intro h1 { font-size: 3.5rem; }
-}
 
 @keyframes heroImageEntrance {
   from { opacity: 0; transform: scale(0.9) translateY(40px); }
@@ -392,3 +398,106 @@ footer {
 
 .section-hidden { opacity: 0; transform: translateY(40px); transition: 1s var(--transition); }
 .section-visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 50px;
+    gap: 40px;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .hero-buttons, .hero .contact-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h3 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+
+  .exp-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .hero-img img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn-primary,
+  .project-actions .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}

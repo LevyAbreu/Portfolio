@@ -40,7 +40,6 @@ function renderSkills() {
     `).join('');
 }
 
-// Localize a função renderProjects e substitua por esta:
 function renderProjects() {
     if (!projectsGrid) return;
     projectsGrid.innerHTML = PROJECTS_DATA.map(project => `
@@ -70,13 +69,11 @@ function renderExperience() {
     `).join('');
 }
 
-// Lógica de Partículas Interativas
 function initParticles() {
     const canvas = document.getElementById('particleCanvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
 
-    // Ajusta o tamanho do canvas
     function resize() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -104,7 +101,7 @@ function initParticles() {
         }
 
         draw() {
-            ctx.fillStyle = 'rgba(255, 77, 77, 0.5)'; // Cor primária do seu site
+            ctx.fillStyle = 'rgba(255, 77, 77, 0.5)';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
@@ -112,7 +109,7 @@ function initParticles() {
     }
 
     function createParticles() {
-        const amount = 80; // Quantidade de partículas
+        const amount = 80;
         for (let i = 0; i < amount; i++) {
             particles.push(new Particle());
         }
@@ -130,7 +127,6 @@ function initParticles() {
         requestAnimationFrame(animate);
     }
 
-    // Desenha linhas entre partículas próximas (efeito rede)
     function drawLines() {
         for (let i = 0; i < particles.length; i++) {
             for (let j = i; j < particles.length; j++) {
