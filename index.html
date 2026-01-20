@@ -3,179 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Levy Abreu - Portfólio</title>
+  <title>Levy Abreu | Portfólio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="particleCanvas"></canvas>
   <header>
-    <div class="logo">Levy Abreu</div>
+    <div class="logo">Portfólio</div> 
     <nav>
       <ul id="nav-links">
+        <li><a href="#hero">Início</a></li>
         <li><a href="#about">Sobre</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projetos</a></li>
-        <li><a href="#experience">Experiência</a></li>
-        <li><a href="#contact">Contatos</a></li>
+        <li><a href="#experience">Carreira</a></li>
       </ul>
-      <div id="menu-toggle">&#9776;</div>
     </nav>
   </header>
 
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="intro">
       <h2>Olá, me chamo</h2>
-      <h1></h1>
-      <h3>Desenvolvedor Fullstack</h3>
+      <h1 id="typewriter"></h1> <h3>Desenvolvedor Fullstack</h3>
+      <div class="contact-buttons">
+        <a href="https://github.com/LevyAbreu" target="_blank" class="btn-circle" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/victor-levy-abreu-276b31275" target="_blank" class="btn-circle" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/lev.git/" target="_blank" class="btn-circle" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@lev.git" target="_blank" class="btn-circle" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
       <div class="hero-buttons">
         <a href="#projects" class="btn-primary">Meus Projetos</a>
-        <a href="#contact" class="btn-secondary">Contatos</a>
       </div>
     </div>
     <div class="hero-img">
-      <img src="https://avatars.githubusercontent.com/u/148262651?v=4" alt="Victor Levy">
+      <img src="https://avatars.githubusercontent.com/u/148262651?v=4" alt="Foto de Perfil">
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="section-hidden">
     <h2>Sobre mim</h2>
-    <p>
-      Desde pequeno, quando, lendo histórias em quadrinhos e assistindo animações de heróis, 
-      percebi que aquilo tudo estava dentro da futura realidade, e iniciei minha paixão 
-      por tecnologia e jornada rumo à inovação da humanidade. Tenho a meta de me tornar 
-      uma das grandes mentes dessa geração e contribuir com o próximo passo da evolução 
-      tecnológica da humanidade, pois como diria Alan Kay:
-    </p>
-    <blockquote>
-      "The best way to predict the future is to invent it."
-    </blockquote>
+    <div id="about-content" class="about-content">
+        </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="section-hidden">
     <h2>Skills</h2>
-    <div class="skills-group">
-      <h3>Frontend</h3>
-      <div class="skills-grid">
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=20909&format=png" alt=""><p>HTML5</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=21278&format=png" alt=""><p>CSS3</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=108784&format=png" alt=""><p>JavaScript</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png" alt=""><p>React Native</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png" alt=""><p>Flutter</p></div>
-      </div>
-    </div>
-    <div class="skills-group">
-      <h3>Backend</h3>
-      <div class="skills-grid">
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png" alt=""><p>Node.js</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=ROMfFZ1tMhpk&format=png" alt=""><p>Firebase</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=13679&format=png" alt=""><p>Java</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=13441&format=png" alt=""><p>Python</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png" alt=""><p>MySQL</p></div>
-      </div>
-    </div>
-    <div class="skills-group">
-      <h3>DevOps & Tools</h3>
-      <div class="skills-grid">
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=20906&format=png" alt=""><p>Git</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=62856&format=png" alt=""><p>GitHub</p></div>
-        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt=""><p>VS Code</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=EPbEfEa7o8CB&format=png" alt=""><p>Postman</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png" alt=""><p>Figma</p></div>
-        <div class="skill-card"><img src="https://img.icons8.com/?size=100&id=b8sdBSRPX1RX&format=png" alt=""><p>Scratch</p></div>
-      </div>
-    </div>
-    <div class="skills-group">
-      <h3>Skills adicionais</h3>
-      <ul>
-        <li>POO e programação funcional</li>
-        <li>APIs REST, manutenção lógica de notebooks</li>
-        <li>Redes de computadores, controle de inventário, backups</li>
-        <li>Comunicação, proatividade, trabalho em equipe, organização</li>
-        <li>Inglês (leitura técnica e conversação)</li>
-      </ul>
-    </div>
+    <div class="skills-container">
+        </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="section-hidden">
     <h2>Projetos</h2>
     <div class="projects-grid">
-      <div class="project-card">
-        <img src="assets/HealthHub.png" alt="HealthHub">
-        <h3>HealthHub</h3>
-        <p>Plataforma de acompanhamento de saúde.</p>
-        <div class="buttons">
-          <a href="https://healthhub-ten.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
-          <a href="https://github.com/LevyAbreu/HealthHub" target="_blank" class="btn-secondary">Documentação</a>
         </div>
-      </div>
-      <div class="project-card">
-        <img src="https://raw.githubusercontent.com/LevyAbreu/StayLy/main/assets/images/demo/dashboard.png" alt="StayLy">
-        <h3>StayLy</h3>
-        <p>Gerenciamento de vagas e clientes em hotéis.</p>
-        <div class="buttons">
-          <a href="https://stayly.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
-          <a href="https://github.com/LevyAbreu/StayLy" target="_blank" class="btn-secondary">Documentação</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="https://raw.githubusercontent.com/LevyAbreu/PayPlanner/main/assets/images/demo/dashboard.png" alt="PayPlanner">
-        <h3>PayPlanner</h3>
-        <p>Organização financeira simplificada.</p>
-        <div class="buttons">
-          <a href="https://pay-planner.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
-          <a href="https://github.com/LevyAbreu/PayPlanner" target="_blank" class="btn-secondary">Documentação</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="https://raw.githubusercontent.com/LevyAbreu/CompraGo/main/assets/images/ItensList.png" alt="CompraGO">
-        <h3>CompraGo</h3>
-        <p>Gerenciamento de listas de compras.</p>
-        <div class="buttons">
-          <a href="https://compra-go.vercel.app" target="_blank" class="btn-primary">Ver Projeto</a>
-          <a href="https://github.com/LevyAbreu/CompraGo" target="_blank" class="btn-secondary">Documentação</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="https://camo.githubusercontent.com/c5c8b6cfbfa150f04e93221a4b1993774163970f462ef606531904b9ff893f42/68747470733a2f2f706f7274666f6c696f2d736e6f77792d74776f2d32302e76657263656c2e6170702f6173736574732f436f6e73756c746152652e706e67" alt="ConsultaRe">
-        <h3>ConsultaRe</h3>
-        <p>Gerenciamento de leads e clientes.</p>
-        <div class="buttons">
-          <a href="https://consultare.vercel.app/" target="_blank" class="btn-primary">Ver Projeto</a>
-          <a href="https://github.com/LevyAbreu/ConsultaRe-" target="_blank" class="btn-secondary">Documentação</a>
-        </div>
-      </div>
-    </div>
-    <a href="https://github.com/LevyAbreu" target="_blank" class="btn-more">View More</a>
   </section>
 
-  <section id="experience">
-    <h2>Experiência Acadêmica</h2>
-    <div class="exp-card"><h3>(Técnico) Desenvolvimento de sistemas</h3><span>2019/2021 - Instituto Federal do Amazonas</span><p></p></div>
-    <div class="exp-card"><h3>(Licenciatura) Computação</h3><span>2022/2023 - Universidade do Estado do Amazonas</span><p></p></div>
-    <div class="exp-card"><h3>(Bacharel) Engenharia de Software</h3><span>2023/Atual - Faculdade Metropolitana de Manaus</span><p></p></div>
+  <section id="experience" class="section-hidden">
+    <h2>Carreira</h2>
+    <div class="timeline">
+        </div>
   </section>
 
-  <section id="contact">
-    <h2>Contatos</h2>
-    <p class="contact-text">Entre em contato comigo através de:</p>
-    <div class="contact-buttons">
-      <a href="https://github.com/LevyAbreu" target="_blank" class="btn-circle">
-        <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF" alt="GitHub">
-      </a>
-      <a href="https://www.linkedin.com/in/victor-levy-abreu-276b31275" target="_blank" class="btn-circle">
-        <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="LinkedIn">
-      </a>
-      <a href="https://www.instagram.com/p4checo.lv" class="btn-circle">
-        <img src="https://img.icons8.com/?size=100&id=85140&format=png&color=000000" alt="Instagram">
-      </a>
-      <a href="https://wa.me/+559294861601" class="btn-circle">
-        <img src="https://img.icons8.com/?size=100&id=62855&format=png&color=000000" alt="Whatsapp">
-      </a>
-    </div>
-  </section>
   <footer>
-    <p>© 2025 - Desenvolvido por Levy Abreu</p>
+    <p>© 2026 Levy Abreu • Made with Passion</p>
   </footer>
-  <script src="script.js"></script>
+
+  <script type="module" src="script.js"></script>
 </body>
 </html>
