@@ -25,6 +25,9 @@ export const SKILLS_DATA = [
             { name: "Node.js", icon: "https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png" },
             { name: "Python", icon: "https://img.icons8.com/?size=100&id=13441&format=png" },
             { name: "Java", icon: "https://img.icons8.com/?size=100&id=13679&format=png" },
+            { name: "C", icon: "https://img.icons8.com/?size=100&id=40669&format=png" },
+            { name: "C++", icon: "https://img.icons8.com/?size=100&id=40670&format=png" },
+            { name: "C#", icon: "https://img.icons8.com/?size=100&id=55251&format=png" },
             { name: "Django", icon: "https://img.icons8.com/?size=100&id=qULYrKvr-AFH&format=png&color=1B9553" },
             { name: "Flutter", icon: "https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png" },
             { name: "React Native", icon: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png" }
