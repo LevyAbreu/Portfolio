@@ -21,6 +21,7 @@
   scroll-behavior: smooth;
 }
 
+/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { 
@@ -31,19 +32,20 @@
 
 html, body {
   width: 100%;
-  position: relative;
+  overflow-x: hidden; /* Evita o scroll horizontal */
 }
+
 body {
   background: var(--bg-dark);
   color: var(--text-main);
   line-height: 1.6;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 } 
 
 #particleCanvas {
@@ -59,11 +61,11 @@ img {
 
 section {
   position: relative;
-  background: transparent;
   padding: 80px 8%;
 }
+
 h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Tamanho responsivo fluido */
   font-weight: 700;
   margin-bottom: 40px;
   display: flex;
@@ -79,108 +81,6 @@ h2::after {
   opacity: 0.3;
 }
 
+/* Animações */
 .section-hidden { opacity: 0; transform: translateY(40px); transition: 1s var(--transition); }
 .section-visible { opacity: 1; transform: translateY(0); }
-
-@media (max-width: 1024px) {
-  header {
-    padding: 15px 5%;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding-top: 50px;
-    gap: 40px;
-  }
-
-  .intro h1 {
-    font-size: 3rem;
-  }
-
-  .hero-buttons, .hero .contact-buttons {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hero-img img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 60px 5%;
-  }
-
-  .intro h1 {
-    font-size: 2.5rem;
-  }
-
-  .intro h3 {
-    font-size: 1.2rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  nav ul {
-    gap: 15px;
-  }
-
-  nav ul li a {
-    font-size: 0.85rem;
-  }
-
-  .exp-card {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-    padding: 20px;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    font-size: 1.2rem;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .intro h1 {
-    font-size: 2rem;
-  }
-
-  .hero-img img {
-    width: 240px;
-    height: 240px;
-  }
-
-  .btn-primary {
-    width: 100%;
-    text-align: center;
-  }
-
-  .project-actions {
-    flex-direction: column;
-  }
-
-  .project-actions .btn-primary,
-  .project-actions .btn-secondary {
-    width: 100%;
-    text-align: center;
-  }
-}

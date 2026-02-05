@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 5% 40px; /* Reduzi de 8% para 5% para ganhar espaço lateral no mobile */
+  padding: 60px 5% 40px;
   min-height: 70vh;
-  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+  flex-wrap: wrap;
 }
 
 .intro h2 {
@@ -126,4 +126,32 @@
 @keyframes heroImageEntrance {
   from { opacity: 0; transform: scale(0.9) translateY(40px); }
   to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-buttons {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contact-buttons {
+    margin: auto;
+  }
 }

@@ -1,14 +1,17 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: rgba(5, 5, 5, 0.7);
-  backdrop-filter: blur(20px);
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 1000;
-  border-bottom: 1px solid var(--border-glass);
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(5, 5, 5, 0.85);
+  backdrop-filter: blur(15px);
+  padding: 15px 8%;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px; 
 }
 
 .logo {
@@ -42,4 +45,37 @@ footer {
   border-top: 1px solid var(--border-glass);
   color: var(--text-dim);
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0; /* Remove padding lateral para não empurrar o menu */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    display: none; /* Mantém a logo oculta conforme solicitado */
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Ajuste leve no espaço para caber em telas menores */
+    width: 100%;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
 }
