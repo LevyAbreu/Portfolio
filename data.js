@@ -3,8 +3,8 @@ export const BIO_DATA = {
     role: "Desenvolvedor Fullstack",
     avatar: "https://avatars.githubusercontent.com/u/148262651?v=4",
     description: "Desde pequeno, percebi que a tecnologia era a chave para a evolução da humanidade. Minha jornada é movida pela paixão em transformar ideias em realidade digital, buscando sempre o próximo passo da inovação tecnológica.",
-    quote: "The best way to predict the future is to invent it.",
-    quoteAuthor: "Alan Kay"
+    quote: "Any sufficiently advanced technology is indistinguishable from magic",
+    quoteAuthor: "Arthur C. Clarke"
 };
 
 export const SKILLS_DATA = [
