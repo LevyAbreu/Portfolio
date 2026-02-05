@@ -136,6 +136,31 @@
     justify-content: center;
   }
 
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; /* Espaço para o texto não colar na foto */
+  }
+
+  .hero-img img {
+    /* Define um tamanho fixo idêntico para largura e altura */
+    width: 250px !important;
+    height: 250px !important;
+    
+    /* Garante o círculo perfeito */
+    border-radius: 50% !important;
+    
+    /* Impede que a imagem estique se as proporções originais forem diferentes */
+    object-fit: cover; 
+    
+    /* Remove qualquer max-width que possa estar interferindo */
+    max-width: none; 
+    
+    display: block;
+    margin: 0 auto;
+  }
+
   .intro {
     margin-top: 30px;
     display: flex;
