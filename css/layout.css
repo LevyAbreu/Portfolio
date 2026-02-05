@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: rgba(5, 5, 5, 0.7);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary-glow);
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+  border-top: 1px solid var(--border-glass);
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}

@@ -45,7 +45,10 @@ function renderProjects() {
     projectsGrid.innerHTML = PROJECTS_DATA.map(project => `
         <div class="project-card">
             <div class="project-img-container">
-                <img src="${project.image}" alt="${project.title}" loading="lazy">
+                <div class="slider-track">
+                    <img src="${project.image1}" alt="${project.title} 1">
+                    <img src="${project.image2 || project.image1}" alt="${project.title} 2">
+                </div>
             </div>
             <div class="project-info">
                 <h3>${project.title}</h3>
@@ -71,6 +74,7 @@ function renderExperience() {
 
 function initParticles() {
     const canvas = document.getElementById('particleCanvas');
+    if(!canvas) return;
     const ctx = canvas.getContext('2d');
     let particles = [];
 
@@ -89,17 +93,14 @@ function initParticles() {
             this.speedY = (Math.random() - 0.5) * 0.5;
             this.size = Math.random() * 2;
         }
-
         update() {
             this.x += this.speedX;
             this.y += this.speedY;
-
             if (this.x > canvas.width) this.x = 0;
             if (this.x < 0) this.x = canvas.width;
             if (this.y > canvas.height) this.y = 0;
             if (this.y < 0) this.y = canvas.height;
         }
-
         draw() {
             ctx.fillStyle = 'rgba(255, 77, 77, 0.5)';
             ctx.beginPath();
@@ -110,19 +111,12 @@ function initParticles() {
 
     function createParticles() {
         const amount = 80;
-        for (let i = 0; i < amount; i++) {
-            particles.push(new Particle());
-        }
+        for (let i = 0; i < amount; i++) particles.push(new Particle());
     }
 
     function animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
-        particles.forEach(p => {
-            p.update();
-            p.draw();
-        });
-        
+        particles.forEach(p => { p.update(); p.draw(); });
         drawLines();
         requestAnimationFrame(animate);
     }
@@ -133,7 +127,6 @@ function initParticles() {
                 let dx = particles[i].x - particles[j].x;
                 let dy = particles[i].y - particles[j].y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
-
                 if (distance < 120) {
                     ctx.strokeStyle = `rgba(255, 77, 77, ${0.15 - distance/1000})`;
                     ctx.lineWidth = 0.5;
@@ -145,7 +138,6 @@ function initParticles() {
             }
         }
     }
-
     createParticles();
     animate();
 }

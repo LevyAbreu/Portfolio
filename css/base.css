@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #ff4d4d;
+  --primary-variant: #ff8e53;
+  --primary-glow: rgba(255, 77, 77, 0.4);
+  --bg-dark: #050505;
+  --card-bg: #111111;
+  --text-main: #ffffff;
+  --text-dim: #a0a0a0;
+  --glass: rgba(255, 255, 255, 0.03);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { 
+  background: #222; 
+  border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+html, body {
+  width: 100%;
+  position: relative;
+}
+body {
+  background: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+} 
+
+#particleCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: var(--bg-dark);
+  pointer-events: none;
+}
+
+section {
+  position: relative;
+  background: transparent;
+  padding: 80px 8%;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h2::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, var(--primary), transparent);
+  opacity: 0.3;
+}
+
+.section-hidden { opacity: 0; transform: translateY(40px); transition: 1s var(--transition); }
+.section-visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 5%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 50px;
+    gap: 40px;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .hero-buttons, .hero .contact-buttons {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h3 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+
+  .exp-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .hero-img img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-actions {
+    flex-direction: column;
+  }
+
+  .project-actions .btn-primary,
+  .project-actions .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}

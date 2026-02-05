@@ -48,44 +48,58 @@ export const SKILLS_DATA = [
 
 export const PROJECTS_DATA = [
     {
+        title: "HalliApp",
+        summary: "Delivery SaaS moderno, prático e otimizado.",
+        image1: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/client-preview.png",
+        image2: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/client-preview.png",
+        deploy: "https://halli-app.vercel.app/",
+        repository: "https://github.com/LevyAbreu/HalliApp"
+    },
+    {
         title: "HealthHub",
         summary: "Plataforma de acompanhamento de saúde.",
-        image: "./assets/HealthHub.png",
+        image1: "./assets/HealthHub.png",
+        image2: "./assets/HealthHub-2.png",
         deploy: "https://healthhub-ten.vercel.app/",
         repository: "https://github.com/LevyAbreu/HealthHub#readme"
     },
     {
         title: "StayLy",
         summary: "Gerenciamento de vagas e clientes em hotéis.",
-        image: "https://raw.githubusercontent.com/LevyAbreu/StayLy/main/assets/images/demo/dashboard.png",
+        image1: "https://raw.githubusercontent.com/LevyAbreu/StayLy/main/assets/images/demo/dashboard.png",
+        image2: "https://github.com/LevyAbreu/StayLy/raw/main/assets/images/demo/loginscreen.png",
         deploy: "https://stayly.vercel.app/",
         repository: "https://github.com/LevyAbreu/StayLy#readme"
     },
     {
         title: "ConsultaRe",
         summary: "Gerenciamento de leads e clientes.",
-        image: "./assets/ConsultaRe.png",
+        image1: "./assets/ConsultaRe.png",
+        image2: "./assets/ConsultaRe-2.png",
         deploy: "https://consultare.vercel.app/",
         repository: "https://github.com/LevyAbreu/ConsultaRe-#readme"
     },
     {
         title: "CompraGo",
         summary: "Gerenciamento de listas de compras.",
-        image: "https://raw.githubusercontent.com/LevyAbreu/CompraGo/main/assets/images/ItensList.png",
+        image1: "https://raw.githubusercontent.com/LevyAbreu/CompraGo/main/assets/images/ItensList.png",
+        image2: "https://raw.githubusercontent.com/LevyAbreu/CompraGo/main/assets/images/Home.png",
         deploy: "https://compra-go.vercel.app/",
         repository: "https://github.com/LevyAbreu/CompraGo#readme"
     },
     {
         title: "PayPlanner",
         summary: "Organização financeira simplificada.",
-        image: "./assets/PayPlanner.png",
+        image1: "./assets/PayPlanner.png",
+        image2: "./assets/PayPlanner-2.png",
         deploy: "https://pay-planner.vercel.app/",
         repository: "https://github.com/LevyAbreu/PayPlanner#readme"
     },
     {
         title: "Adottami",
         summary: "Plataforma social com foco em pets.",
-        image: "./assets/Adottami.png",
+        image1: "./assets/Adottami.png",
+        image2: "./assets/Adottami-2.png",
         deploy: "https://adottami-theta.vercel.app/",
         repository: "https://github.com/LevyAbreu/adottami#readme"
     },
@@ -99,7 +113,7 @@ export const CAREER_DATA = [
     },
     {
         at: "Universidade do Estado do Amazonas",
-        title: "Licenciatura em     Computação",
+        title: "Licenciatura em Computação",
         period: "2022 - 2023"
     },
     {

@@ -1,0 +1,35 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.exp-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.exp-card:hover {
+  border-color: var(--primary);
+  transform: translateX(10px);
+}
+
+.exp-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+.exp-card span {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
