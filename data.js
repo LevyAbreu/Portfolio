@@ -51,9 +51,17 @@ export const PROJECTS_DATA = [
         title: "HalliApp",
         summary: "Delivery SaaS moderno, prático e otimizado.",
         image1: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/client-preview.png",
-        image2: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/client-preview.png",
+        image2: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/admin-preview.png",
         deploy: "https://halli-app.vercel.app/",
         repository: "https://github.com/LevyAbreu/HalliApp"
+    },
+    {
+        title: "StayLy",
+        summary: "Gerenciamento de vagas e clientes em hotéis.",
+        image1: "https://github.com/LevyAbreu/StayLy/raw/main/assets/images/demo/dashboard.png",
+        image2: "https://github.com/LevyAbreu/StayLy/raw/main/assets/images/demo/loginscreen.png",
+        deploy: "https://stayly.vercel.app/",
+        repository: "https://github.com/LevyAbreu/StayLy#readme"
     },
     {
         title: "HealthHub",
@@ -62,14 +70,6 @@ export const PROJECTS_DATA = [
         image2: "./assets/HealthHub-2.png",
         deploy: "https://healthhub-ten.vercel.app/",
         repository: "https://github.com/LevyAbreu/HealthHub#readme"
-    },
-    {
-        title: "StayLy",
-        summary: "Gerenciamento de vagas e clientes em hotéis.",
-        image1: "https://raw.githubusercontent.com/LevyAbreu/StayLy/main/assets/images/demo/dashboard.png",
-        image2: "https://github.com/LevyAbreu/StayLy/raw/main/assets/images/demo/loginscreen.png",
-        deploy: "https://stayly.vercel.app/",
-        repository: "https://github.com/LevyAbreu/StayLy#readme"
     },
     {
         title: "ConsultaRe",
