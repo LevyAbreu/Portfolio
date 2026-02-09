@@ -64,20 +64,20 @@ export const PROJECTS_DATA = [
         repository: "https://github.com/LevyAbreu/StayLy#readme"
     },
     {
+        title: "NexuCRM",
+        summary: "Gerenciamento de leads e clientes.",
+        image1: "https://github.com/LevyAbreu/NexuCRM/raw/main/docs/img/dashboard.png",
+        image2: "https://github.com/LevyAbreu/NexuCRM/raw/main/docs/img/statistics.png",
+        deploy: "https://nexu-crm.vercel.app",
+        repository: "https://github.com/LevyAbreu/NexuCRM"
+    },
+    {
         title: "HealthHub",
         summary: "Plataforma de acompanhamento de saúde.",
         image1: "./assets/HealthHub.png",
         image2: "./assets/HealthHub-2.png",
         deploy: "https://healthhub-ten.vercel.app/",
         repository: "https://github.com/LevyAbreu/HealthHub#readme"
-    },
-    {
-        title: "ConsultaRe",
-        summary: "Gerenciamento de leads e clientes.",
-        image1: "./assets/ConsultaRe.png",
-        image2: "./assets/ConsultaRe-2.png",
-        deploy: "https://consultare.vercel.app/",
-        repository: "https://github.com/LevyAbreu/ConsultaRe-#readme"
     },
     {
         title: "CompraGo",
