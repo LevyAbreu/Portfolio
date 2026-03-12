@@ -55,7 +55,6 @@ function renderProjects() {
                 <p>${project.summary}</p>
                 <div class="project-actions">
                     <a href="${project.deploy}" target="_blank" class="btn-primary">Deploy</a>
-                    <a href="${project.repository}" target="_blank" class="btn-secondary">GitHub</a>
                 </div>
             </div>
         </div>

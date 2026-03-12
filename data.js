@@ -72,36 +72,12 @@ export const PROJECTS_DATA = [
         repository: "https://github.com/LevyAbreu/NexuCRM"
     },
     {
-        title: "HealthHub",
-        summary: "Plataforma de acompanhamento de saúde.",
-        image1: "./assets/HealthHub.png",
-        image2: "./assets/HealthHub-2.png",
-        deploy: "https://healthhub-ten.vercel.app/",
-        repository: "https://github.com/LevyAbreu/HealthHub#readme"
-    },
-    {
-        title: "CompraGo",
+        title: "ListFlow",
         summary: "Gerenciamento de listas de compras.",
-        image1: "https://raw.githubusercontent.com/LevyAbreu/CompraGo/main/assets/images/ItensList.png",
-        image2: "https://raw.githubusercontent.com/LevyAbreu/CompraGo/main/assets/images/Home.png",
-        deploy: "https://compra-go.vercel.app/",
+        image1: "https://github.com/LevyAbreu/ListFlow/raw/master/app/src/images/screenshot_dashboard.png",
+        image2: "https://github.com/LevyAbreu/ListFlow/raw/master/app/src/images/screenshot_reports.png",
+        deploy: "https://list-flow.vercel.app/",
         repository: "https://github.com/LevyAbreu/CompraGo#readme"
-    },
-    {
-        title: "PayPlanner",
-        summary: "Organização financeira simplificada.",
-        image1: "./assets/PayPlanner.png",
-        image2: "./assets/PayPlanner-2.png",
-        deploy: "https://pay-planner.vercel.app/",
-        repository: "https://github.com/LevyAbreu/PayPlanner#readme"
-    },
-    {
-        title: "Adottami",
-        summary: "Plataforma social com foco em pets.",
-        image1: "./assets/Adottami.png",
-        image2: "./assets/Adottami-2.png",
-        deploy: "https://adottami-theta.vercel.app/",
-        repository: "https://github.com/LevyAbreu/adottami#readme"
     },
 ];
 
