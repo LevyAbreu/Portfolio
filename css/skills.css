@@ -38,10 +38,9 @@
 
 .skill-card:hover img { transform: scale(1.2) rotate(5deg); }
 
-/* skills.css mobile */
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(4, 1fr); /* Força 3 cards por linha */
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   }
 

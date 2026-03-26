@@ -34,7 +34,6 @@
   font-size: 0.9rem;
 }
 
-/* career.css & projects.css mobile */
 @media (max-width: 768px) {
   .exp-card {
     flex-direction: column;
@@ -44,7 +43,7 @@
   }
 
   .project-actions {
-    flex-direction: column; /* Botões um em cima do outro se necessário */
+    flex-direction: column;
     width: 100%;
   }
 

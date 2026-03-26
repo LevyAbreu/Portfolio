@@ -49,7 +49,7 @@ footer {
 
 @media (max-width: 768px) {
   header {
-    padding: 15px 0; /* Remove padding lateral para não empurrar o menu */
+    padding: 15px 0;
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -57,7 +57,7 @@ footer {
   }
 
   .logo {
-    display: none; /* Mantém a logo oculta conforme solicitado */
+    display: none;
   }
 
   nav {
@@ -70,8 +70,8 @@ footer {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 15px; /* Ajuste leve no espaço para caber em telas menores */
+    justify-content: center;
+    gap: 15px;
     width: 100%;
   }
 

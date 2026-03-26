@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: #ff4d4d;
-  --primary-variant: #ff8e53;
-  --primary-glow: rgba(255, 77, 77, 0.4);
+  --primary: #4d7aff;
+  --primary-variant: #5e9eff;
+  --primary-glow: rgba(77, 122, 255, 0.4);
   --bg-dark: #050505;
   --card-bg: #111111;
   --text-main: #ffffff;
@@ -21,7 +21,6 @@
   scroll-behavior: smooth;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { 
@@ -32,7 +31,7 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Evita o scroll horizontal */
+  overflow-x: hidden;
 }
 
 body {
@@ -65,7 +64,7 @@ section {
 }
 
 h2 {
-  font-size: clamp(1.8rem, 5vw, 2.5rem); /* Tamanho responsivo fluido */
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 700;
   margin-bottom: 40px;
   display: flex;
@@ -81,6 +80,5 @@ h2::after {
   opacity: 0.3;
 }
 
-/* Animações */
 .section-hidden { opacity: 0; transform: translateY(40px); transition: 1s var(--transition); }
 .section-visible { opacity: 1; transform: translateY(0); }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 5% 40px;
+  padding: 60px 8% 40px;
   min-height: 70vh;
   flex-wrap: wrap;
 }
@@ -85,9 +85,9 @@
 
 .hero-buttons {
   display: flex;
-  flex-direction: column; /* Coloca ícones sobre o botão principal */
+  flex-direction: column;
   align-items: flex-start;
-  gap: 25px; /* Espaço vertical entre a linha de ícones e o botão */
+  gap: 25px;
 }
 
 .hero .btn-circle {
@@ -140,23 +140,15 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 20px; /* Espaço para o texto não colar na foto */
+    margin-bottom: 20px;
   }
 
   .hero-img img {
-    /* Define um tamanho fixo idêntico para largura e altura */
     width: 250px !important;
     height: 250px !important;
-    
-    /* Garante o círculo perfeito */
     border-radius: 50% !important;
-    
-    /* Impede que a imagem estique se as proporções originais forem diferentes */
     object-fit: cover; 
-    
-    /* Remove qualquer max-width que possa estar interferindo */
     max-width: none; 
-    
     display: block;
     margin: 0 auto;
   }

@@ -101,7 +101,7 @@ function initParticles() {
             if (this.y < 0) this.y = canvas.height;
         }
         draw() {
-            ctx.fillStyle = 'rgba(255, 77, 77, 0.5)';
+            ctx.fillStyle = 'rgba(77, 122, 255, 0.5)';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
@@ -127,7 +127,7 @@ function initParticles() {
                 let dy = particles[i].y - particles[j].y;
                 let distance = Math.sqrt(dx * dx + dy * dy);
                 if (distance < 120) {
-                    ctx.strokeStyle = `rgba(255, 77, 77, ${0.15 - distance/1000})`;
+                    ctx.strokeStyle = `rgba(77, 122, 255, ${0.15 - distance/1000})`;
                     ctx.lineWidth = 0.5;
                     ctx.beginPath();
                     ctx.moveTo(particles[i].x, particles[i].y);

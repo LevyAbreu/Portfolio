@@ -48,14 +48,6 @@ export const SKILLS_DATA = [
 
 export const PROJECTS_DATA = [
     {
-        title: "HalliApp",
-        summary: "Delivery SaaS moderno, prático e otimizado.",
-        image1: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/client-preview.png",
-        image2: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/admin-preview.png",
-        deploy: "https://halli-app.vercel.app/",
-        repository: "https://github.com/LevyAbreu/HalliApp"
-    },
-    {
         title: "StayLy",
         summary: "Gerenciamento de vagas e clientes em hotéis.",
         image1: "https://github.com/LevyAbreu/StayLy/raw/main/assets/images/demo/dashboard.png",
@@ -64,20 +56,28 @@ export const PROJECTS_DATA = [
         repository: "https://github.com/LevyAbreu/StayLy#readme"
     },
     {
-        title: "NexuCRM",
-        summary: "Gerenciamento de leads e clientes.",
-        image1: "https://github.com/LevyAbreu/NexuCRM/raw/main/docs/img/dashboard.png",
-        image2: "https://github.com/LevyAbreu/NexuCRM/raw/main/docs/img/statistics.png",
-        deploy: "https://nexu-crm.vercel.app",
-        repository: "https://github.com/LevyAbreu/NexuCRM"
-    },
-    {
         title: "ListFlow",
         summary: "Gerenciamento de listas de compras.",
         image1: "https://github.com/LevyAbreu/ListFlow/raw/master/app/src/images/screenshot_dashboard.png",
         image2: "https://github.com/LevyAbreu/ListFlow/raw/master/app/src/images/screenshot_reports.png",
         deploy: "https://list-flow.vercel.app/",
         repository: "https://github.com/LevyAbreu/CompraGo#readme"
+    },
+    {
+        title: "HalliApp",
+        summary: "Delivery SaaS moderno, prático e otimizado.",
+        image1: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/client-preview.png",
+        image2: "https://github.com/LevyAbreu/HalliApp/raw/main/docs/assets/images/demo/admin-preview.png",
+        deploy: "https://halli-app.vercel.app/",
+        repository: "https://github.com/LevyAbreu/HalliApp"
+    },
+    {
+        title: "NexuCRM",
+        summary: "Gerenciamento de leads e clientes.",
+        image1: "https://github.com/LevyAbreu/NexuCRM/raw/main/docs/img/dashboard.png",
+        image2: "https://github.com/LevyAbreu/NexuCRM/raw/main/docs/img/statistics.png",
+        deploy: "https://nexu-crm.vercel.app",
+        repository: "https://github.com/LevyAbreu/NexuCRM"
     },
 ];
 
