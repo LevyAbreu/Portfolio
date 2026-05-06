@@ -83,18 +83,21 @@ export const PROJECTS_DATA = [
 
 export const CAREER_DATA = [
     {
-        at: "Faculdade Metropolitana de Manaus",
-        title: "Engenharia de Software",
-        period: "2023 - Atualmente"
+        at: "INDT - Instituto de Desenvolvimento Tecnológico",
+        title: "Estágio em QA",
+        type: "Estágio",
+        period: "abr/2026"
     },
     {
-        at: "Universidade do Estado do Amazonas",
-        title: "Licenciatura em Computação",
-        period: "2022 - 2023"
+        at: "Faculdade Metropolitana de Manaus",
+        title: "Engenharia de Software",
+        type: "Educação",
+        period: "jul/2023"
     },
     {
         at: "Instituto Federal do Amazonas",
         title: "Técnico em Desenvolvimento",
-        period: "2019 - 2021"
+        type: "Educação",
+        period: "jan/2019 - dez/2021"
     }
 ];
